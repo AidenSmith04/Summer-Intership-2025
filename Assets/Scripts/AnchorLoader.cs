@@ -7,7 +7,7 @@ using TMPro;
 public class AnchorLoader : MonoBehaviour
 {
 
-    private OVRSpatialAnchor anchorPrefab;
+    public OVRSpatialAnchor anchorPrefab;
     private SpatialAnchorManager spatialAnchorManager;
 
     Action<OVRSpatialAnchor.UnboundAnchor, bool> _onLoadAnchor;

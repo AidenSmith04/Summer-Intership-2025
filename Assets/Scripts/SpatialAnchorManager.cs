@@ -31,22 +31,22 @@ public class SpatialAnchorManager : MonoBehaviour
         {
             CreateSpatialAnchor();
         }
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LTouch))
-        {
-            SaveLastCreatedAnchor();
-        }   
-        /*if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
-        {
-            UnsaveLastCreatedAnchor();
-        }*/
-        if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
-        {
-            UnsaveAllAnchors();
-        }
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick, OVRInput.Controller.LTouch))
-        {
-            LoadSavedAnchors();
-        }
+        //if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LTouch))
+        //{
+        //    SaveLastCreatedAnchor();
+        //}   
+        ///*if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
+        //{
+        //    UnsaveLastCreatedAnchor();
+        //}*/
+        //if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
+        //{
+        //    UnsaveAllAnchors();
+        //}
+        //if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick, OVRInput.Controller.LTouch))
+        //{
+        //    LoadSavedAnchors();
+        //}
     }
 
     public void CreateSpatialAnchor(){
