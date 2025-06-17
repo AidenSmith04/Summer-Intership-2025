@@ -100,8 +100,9 @@ public class SpatialAnchorManager : MonoBehaviour
         });
     }
 
-    private void UnsaveAllAnchors(){
-        foreach (var anchor in anchors){
+    public void UnsaveAllAnchors(){
+        OVRSpatialAnchor[] allAnchors = FindObjectsOfType<OVRSpatialAnchor>();
+        foreach (var anchor in allAnchors){
             UnsaveAnchor(anchor);
         }
         anchors.Clear();
@@ -116,8 +117,16 @@ public class SpatialAnchorManager : MonoBehaviour
                     var savedStatusText = textComponents[1];
                     savedStatusText.text = "Not daved nuh uhhh";
                 }
+
+                StartCoroutine(DestroyAnchorNextFrame(erasedAnchor.gameObject));
             }
         });
+    }
+
+    private IEnumerator DestroyAnchorNextFrame(GameObject anchorGO)
+    {
+        yield return null; // wait a frame for cleanup safety
+        Destroy(anchorGO);
     }
 
     private void ClearAllUuidsFromPlayerPrefs(){
