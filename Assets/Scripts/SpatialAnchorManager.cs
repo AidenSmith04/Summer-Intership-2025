@@ -50,7 +50,7 @@ public class SpatialAnchorManager : MonoBehaviour
     }
 
     public void CreateSpatialAnchor(){
-        OVRSpatialAnchor workingAnchor = Instantiate(anchorPrefab,OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch),Quaternion.Euler(0,controllerReference.transform.eulerAngles.y-96,0));
+        OVRSpatialAnchor workingAnchor = Instantiate(anchorPrefab,OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch),Quaternion.Euler(0,controllerReference.transform.eulerAngles.y,0));
 
         canvas = workingAnchor.gameObject.GetComponentInChildren<Canvas>();
         uuidText = canvas.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();

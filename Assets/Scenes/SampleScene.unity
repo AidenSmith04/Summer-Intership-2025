@@ -720,9 +720,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spatialAnchorController: {fileID: 1921135642}
   prefabs:
-  - {fileID: 4192966805649531739, guid: 2e301df43567bd341bc92d270cc52262, type: 3}
-  - {fileID: 2315833076588853264, guid: 7f91a822525e5d84ca5fa96b6c53057d, type: 3}
-  - {fileID: 6121878114310013921, guid: bb064e468f9a62d4cb93e6a26e1be2e2, type: 3}
+  - {fileID: 1835165998510424557, guid: 40eb19034f2e74742a05aad6b8f632d4, type: 3}
+  - {fileID: 6102232080280127310, guid: 10cdde5dfd287604792840fbf06a5f24, type: 3}
+  - {fileID: 1405832816049804583, guid: 0aeec9ad91ad6d94585c303e43fb6903, type: 3}
 --- !u!4 &930408327
 Transform:
   m_ObjectHideFlags: 0
